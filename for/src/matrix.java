@@ -59,11 +59,11 @@ public class matrix {
 		for(w=0;w<matrix.length ;w++) {
 			c=geraNum(min, max);
 			//c = r.nextInt((9000 - 1000) + 1) + 1000;
-			matrix[w][0][0]=c;			
+			matrix[w][x][y]=c;			
 			for(x=0;x<matrix[w].length;x++) {
 				b=geraNum(min, max);
 				//b = r.nextInt((9000 - 1000) + 1) + 1000;
-				matrix[w][x][0]=b;
+				matrix[w][x][y]=b;
 				for(y=0;y<matrix[w][x].length;y++) {
 					a=geraNum(min, max);
 					//a = r.nextInt((9000 - 1000) + 1) + 1000;
@@ -79,7 +79,7 @@ public class matrix {
 		
 		for(w=0;w<matrix.length ;w++) {							
 			for(x=0;x<matrix[0].length;x++) {				
-				for(y=0;y<matrix[0][0].length ;y++) {					
+				for(y=0;y<matrix[x][y].length ;y++) {					
 					System.out.print(matrix[w][x][y] + " ");
 				}
 				
